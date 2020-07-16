@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% const arr = [{fName: 'steve', lName: 'irwin'}] %>
+    <select>
+        <% for(const ele of arr) { %>
+            <option value="<%= ele.fName %>"><%= `${ele.fName} middle-name ${ele.lName}` %> </option>
+         <% } %>
+    </select>
+</body>
+</html>
+
